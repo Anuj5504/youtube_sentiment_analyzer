@@ -11,6 +11,7 @@ api_key = os.getenv("YOUTUBE_API_KEY")
 REGION = "US"
 MAX_RESULTS = 50
 
+#Fetched all trending youtube ids
 
 def get_trending_video_ids(api_key, region, max_results=20):
     youtube = build('youtube', 'v3', developerKey=api_key)
