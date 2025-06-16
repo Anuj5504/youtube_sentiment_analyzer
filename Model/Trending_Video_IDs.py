@@ -25,8 +25,7 @@ def get_trending_video_ids(api_key, region, max_results=20):
 
     response = request.execute()
     video_ids = [item['id'] for item in response['items']]
-
-    print("📺 Trending Video IDs:")
+    print("Trending Video IDs:")
     for vid in video_ids:
         print(f"https://www.youtube.com/watch?v={vid}")
 
